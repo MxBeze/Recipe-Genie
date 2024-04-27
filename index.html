@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Recipe Genie</title>
 </head>
 <body>
@@ -15,16 +17,12 @@
     </header>
 
     <main>
-        <form action="">
+        <form action="" id="recipe-form">
             <input type="text" placeholder="Search for a recipe" autofocus required autocomplete="off" class="prompt">
             <input type="submit" value="Get Recipe" class="submit-button">
         </form>
 
-        <div class="recipe">
-            The Recipe
-            <br/>
-            The Recipe
-        </div>
+        <div class="recipe" id="recipe"></div>
     </main>
 </div>
     <footer>
