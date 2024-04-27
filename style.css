@@ -66,12 +66,13 @@ form {
   }
 
 .recipe {
-    font-size: 16x;
+    font-size: 14x;
     background: #ffd5e5;
-    padding: 15px 0;
+    padding: 15px 5px;
     line-height: 1.5;
     border-left: 3px solid plum;
     box-shadow: 0px 4px 30px 0px  rgba(39, 33, 66, 0.03);
+    text-align: center;
 }
 
 footer {
