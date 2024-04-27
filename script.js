@@ -3,7 +3,7 @@ function displayRecipe (response){
         strings: response.data.answer,
         autoStart: true,
         cursor: "",
-        delay: 20,
+        delay: 1,
       });
 }
 
@@ -16,6 +16,10 @@ let prompt = `Generate a delicious recipe for ${userInput.value}`;
 let context =
   "You are a detailed cooking assistant designed to provide users with personalized recipe recommendations based on their dietary preferences, ingredient availability, and cooking skill level. Your aim is to itemise and offer a seamless and engaging user experience, guiding users through each step of the cooking process with clear instructions and helpful tips. They need to know the exact ingredients which MUST be presented as a list, their quantities, and detailed step-by-step instructions on how to prepare and cook the dish. Please also include any specific cooking techniques, utensils, or appliances needed, along with estimated prep and cooking times. If there are any common substitutions or variations of the recipe, please include those as well. Additionally, I would appreciate any tips or advice you can provide to ensure the requested recipe turns out perfectly, such as how to layer the ingredients or how long to let it rest before serving. Your tone should be Informative, engaging and use clear and concise language please. Do not include an introduction of what the food is. Let every ingredient be itemised. Ensure that each line of sentence is seperated with a <br/>. Give a clear line space and sign the recipe with With Love, Michelle 💓 at the bottom";
 let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+let recipeElement = document.querySelector ("#recipe")
+recipeElement.classList.remove("hidden");
+recipeElement.innerHTML = `<div class="generating">⏳ Generating a Recipe for ${userInput.value}</div>`;
 
 axios.get(apiURL).then(displayRecipe);
 }
