@@ -1,6 +1,5 @@
 body {
     background: #defcf9;
-    
 }
 
 a {
@@ -9,8 +8,9 @@ a {
 
 .container {
     text-align: center;
-    margin: 120px auto;
+    margin: 90px auto;
     max-width: 600px;
+    margin-bottom: 50px;
 }
 
 header {
@@ -21,12 +21,12 @@ h1 {
     color: #ff347f;
     font-weight: 800;
     font-size: 36px;
+    margin-bottom: 0;
 }
 
 h2 {
     color: #6643b5;
-    font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 form {
@@ -34,7 +34,7 @@ form {
     background: #ffd5e5;
     border-radius: 10px;
     display: flex;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.8);
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.5);
     margin-bottom: 30px;
 }
 
@@ -59,6 +59,12 @@ form {
     color: #ff347f;
 }
 
+.submit-button:hover {
+    background: purple;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+  }
+
 .recipe {
     font-size: 16x;
     background: #ffd5e5;
@@ -71,4 +77,5 @@ form {
 footer {
     text-align: center;
     margin-top: 20px;
+    font-size: 12px;
 }
