@@ -100,3 +100,18 @@ footer {
     margin-top: 20px;
     font-size: 12px;
 }
+
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
