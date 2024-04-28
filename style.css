@@ -79,6 +79,10 @@ form {
     display: none;
   }
 
+  p {
+    font-size: 13px;
+  }
+
   .suggestion,
   .suggestion0,
   .suggestion1,
